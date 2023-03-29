@@ -13,14 +13,14 @@
 >
 	{#if visible}
 		<p transition:fly={{ x: 50, duration: 2000 }} class="text-2xl md:text-4xl">
-			Hello, I&apos;m <span class="text-[#ff4d5a]">Yassine</span>
+			Hello, I&apos;m <span class="text-redrose">Yassine</span>
 		</p>
 		<p transition:fly={{ x: -50, duration: 2000 }} class="text-2xl md:text-4xl">
 			I&apos;m a full stack web developer.
 		</p>
 		<button
 			transition:fly={{ y: 50, delay: 2000, duration: 2000 }}
-			class="outline p-2 outline-[#ff4d5a] text-[#ff4d5a] hover:outline-[#ec2c39ab]"
+			class="outline p-2 outline-redrose text-redrose hover:outline-[#ec2c39ab]"
 			>View my projects</button
 		>
 	{/if}
