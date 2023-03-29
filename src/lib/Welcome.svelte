@@ -20,7 +20,8 @@
 		</p>
 		<button
 			transition:fly={{ y: 50, delay: 2000, duration: 2000 }}
-			class="outline p-2 outline-[#ff4d5a] text-[#ff4d5a]">View my projects</button
+			class="outline p-2 outline-[#ff4d5a] text-[#ff4d5a] hover:outline-[#ec2c39ab]"
+			>View my projects</button
 		>
 	{/if}
 </div>
