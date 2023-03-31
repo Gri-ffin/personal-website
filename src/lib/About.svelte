@@ -7,16 +7,21 @@
 	}
 
 	const skillItems: SkillItem[] = [
-		{
-			label: 'Javascript',
-			path: '/js.png'
-		}
+		{ label: 'Javascript', path: '/js.png' },
+		{ label: 'Html', path: '/html.png' },
+		{ label: 'Css', path: '/css.png' },
+		{ label: 'React', path: '/react.png' },
+		{ label: 'Typescript', path: '/ts.svg' },
+		{ label: 'Next.Js', path: '/next.png' },
+		{ label: 'Node.Js', path: '/node.png' },
+		{ label: 'Git', path: '/git.png' },
+		{ label: 'Firebase', path: '/firebase.png' }
 	]
 </script>
 
 <div id="about" class="h-screen flex flex-col items-center">
 	<h3 class="about__heading section-heading">About</h3>
-	<div class="flex w-full justify-between px-20">
+	<div class="flex w-full justify-between px-44">
 		<div class="flex items-center flex-col justify-center space-y-4">
 			<div class="h-56 flex">
 				<ProfileSvg />
@@ -29,12 +34,10 @@
 				computer I like to spend my time reading, playing games or doing some research.
 			</p>
 		</div>
-		<div class="grid grid-cols-3 gap-4">
+		<div class="grid gap-4 grid-cols-3 h-60">
 			{#each skillItems as skillItem}
-				<div
-					class=" rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 h-28 p-0.5"
-				>
-					<div class="h-full w-full flex flex-col items-center p-4 bg-[#1a1a1a]">
+				<div class="rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 h-28 p-0.5">
+					<div class="h-full flex flex-col items-center p-4 bg-[#1a1a1a]">
 						<img class="h-16" src={skillItem.path} alt={skillItem.label} />
 						<p class="tracking-wide uppercase">{skillItem.label}</p>
 					</div>
