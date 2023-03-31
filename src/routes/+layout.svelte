@@ -5,7 +5,7 @@
 	import './styles.css'
 </script>
 
-<main class="bg-[#1a1a1a] text-[#fafafa]">
+<main class="text-[#fafafa]">
 	<Nav />
 	<Welcome />
 	<About />

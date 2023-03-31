@@ -19,14 +19,16 @@
 	]
 </script>
 
-<div id="about" class="h-screen flex flex-col items-center">
+<div id="about" class="flex flex-col items-center h-screen">
 	<h3 class="about__heading section-heading">About</h3>
-	<div class="flex w-full justify-between px-44">
+	<div
+		class="flex flex-col xl:flex-row items-center justify-between w-full md:px-44 px-10 space-y-4"
+	>
 		<div class="flex items-center flex-col justify-center space-y-4">
-			<div class="h-56 flex">
+			<div class="md:h-44 h-32 flex">
 				<ProfileSvg />
 			</div>
-			<p class="w-[500px] leading-7 tracking-wide">
+			<p class="w-full lg:w-[500px] leading-7 tracking-wide text-sm">
 				Fully committed to the philosophy of life-long learning, I&apos;m a full stack developer
 				with a deep passion for JavaScript, React and all things web development. The unique
 				combination of creativity, logic, technology and never running out of new things to
@@ -34,7 +36,7 @@
 				computer I like to spend my time reading, playing games or doing some research.
 			</p>
 		</div>
-		<div class="grid gap-4 grid-cols-3 h-60">
+		<div class="grid gap-4 sm:grid-cols-3 grid-cols-2 h-auto">
 			{#each skillItems as skillItem}
 				<div class="rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 h-28 p-0.5">
 					<div class="h-full flex flex-col items-center p-4 bg-[#1a1a1a]">
@@ -52,7 +54,7 @@
 		position: relative;
 		font-size: 3.5rem;
 		font-weight: 700;
-		margin-top: 5rem;
+		margin-top: 3rem;
 		margin-bottom: 3rem;
 		z-index: 9999;
 	}
