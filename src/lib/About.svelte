@@ -19,7 +19,7 @@
 	]
 </script>
 
-<div id="about" class="flex flex-col items-center h-screen">
+<div id="about" class="flex flex-col items-center">
 	<h3 class="about__heading section-heading">About</h3>
 	<div
 		class="flex flex-col xl:flex-row items-center justify-between w-full md:px-44 px-10 space-y-4"
