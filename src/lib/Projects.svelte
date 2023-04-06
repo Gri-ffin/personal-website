@@ -1,26 +1,34 @@
+<script>
+	import LeftSideProject from './Projects/LeftSideProject.svelte'
+	import RightSideProject from './Projects/RightSideProject.svelte'
+</script>
+
+<svelte:head>
+	<link rel="prefetch" href="/classroom.png" />
+	<link rel="prefetch" href="/spotify.png" />
+	<link rel="prefetch" href="/mangareader.png" />
+</svelte:head>
+
 <div id="projects" class="flex flex-col items-center">
 	<h3 class="about__heading section-heading">Projects</h3>
-	<div class="self-start relative flex mb-[14rem] justify-start">
-		<a href="https://classroom-chat-gri-ffin.vercel.app/" target="_blank">
-			<div
-				class="flex items-center justify-start relative bg-[#3216bb] hover:scale-95 transition-all ease-linear"
-			>
-				<div class="w-[85%] relative">
-					<img src="/classroom.png" alt="Classroom Chat" class="w-full overflow-clip" />
-				</div>
-			</div>
-		</a>
-		<div
-			class="relative md:top-[3rem] lg:top-[5rem] top-4 h-fit z-50 p-4 -left-[3rem] lg:-left-[5rem] bg-[#1a1a1a80] md:bg-transparent"
-		>
-			<h3 class="relative z-40 md:text-3xl text-lg font-bold">Classroom Chat</h3>
-			<p
-				class="relative md:mt-12 mt-1 text-xs md:text-base font-semibold z-50 leading-3 tracking-wider"
-			>
-				Live chat app for a school project, built using Nextjs, TailwindCss, Firebase.
-			</p>
-		</div>
-	</div>
+	<LeftSideProject
+		link="https://classroom-chat-gri-ffin.vercel.app/"
+		imageLink="/classroom.png"
+		title="Classroom Chat"
+		description="Live chat app for a school project, built using Nextjs, TailwindCss, Firebase."
+	/>
+	<RightSideProject
+		link="https://spotify-clone-gri-ffin.vercel.app/login"
+		imageLink="/spotify.png"
+		title="MySpotify"
+		description="Minimal and lightweight Spotify clone that let me listen and enjoy my playlists. Built using Nextjs, TailwindCss, SpotifyApi, Atom."
+	/>
+	<LeftSideProject
+		link="https://manga-reader-gri-ffin.vercel.app/"
+		imageLink="/mangareader.png"
+		title="Manga Reader"
+		description="Website to read japanese manga and the see the latest uploaded manga. Built using Nextjs, ChakraUI, MangadexApi."
+	/>
 </div>
 
 <style>
