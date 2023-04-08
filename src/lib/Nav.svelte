@@ -21,9 +21,5 @@
 				>Projects</a
 			>
 		</li>
-		<li>
-			<a href="#contact" class={`${$page.url.hash === '#contact' ? 'text-redrose' : ''}`}>Contact</a
-			>
-		</li>
 	</ul>
 </nav>
