@@ -7,6 +7,9 @@
 	import './styles.css'
 </script>
 
+<svelte:head>
+	<title>Yassine Tadlaoui - Dev Portfolio</title>
+</svelte:head>
 <main class="text-[#fafafa]">
 	<Nav />
 	<Welcome />
