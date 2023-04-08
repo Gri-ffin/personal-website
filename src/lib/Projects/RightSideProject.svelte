@@ -16,7 +16,7 @@
 		</div>
 	</a>
 	<div
-		class="relative md:top-[3rem] lg:top-[5rem] top-4 h-fit z-50 p-4 -right-[3rem] lg:-right-[5rem] bg-[#1a1a1a80] md:bg-transparent"
+		class="relative md:top-[3rem] lg:top-[5rem] top-4 h-fit z-40 p-4 -right-[3rem] lg:-right-[5rem] bg-[#1a1a1a80] md:bg-transparent"
 	>
 		<h3 class="relative z-40 md:text-3xl text-lg font-bold">{title}</h3>
 		<p
