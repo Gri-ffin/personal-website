@@ -1,5 +1,6 @@
 <script lang="ts">
 	import About from '$lib/About.svelte'
+	import Contact from '$lib/Contact.svelte'
 	import Nav from '$lib/Nav.svelte'
 	import Projects from '$lib/Projects.svelte'
 	import Welcome from '$lib/Welcome.svelte'
@@ -11,4 +12,5 @@
 	<Welcome />
 	<About />
 	<Projects />
+	<Contact />
 </main>
